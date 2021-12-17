@@ -1,3 +1,4 @@
+%sets dobot into a zero configuration
 
 function robot = makezero(arduinoObj, zero_config)
 alligned = false;
