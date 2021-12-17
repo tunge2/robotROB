@@ -25,8 +25,8 @@ line_chr_cmd = char(typecast(single(line_float_cmd), 'uint8'));
 line_chr_cmd = [header_chr,line_chr_cmd]; %,tail_chr]
 line_str_cmd = convertCharsToStrings(line_chr_cmd);
 
-%pause(0.87); %need to pause in order to succesfully actuate?
-pause(0.87)
+pause(0.87); %need to pause in order to succesfully actuate
+    
 writeline(arduinoObj,line_str_cmd)
 time = toc(tstart);
 end
