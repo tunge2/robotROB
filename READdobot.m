@@ -1,9 +1,9 @@
-%READdobot
+%READdobot flushs serial data from Dobot
 
 function robot = READdobot(arduinoObj)
     
     flush(arduinoObj);
-    pause(3)
+    pause(3) %pause to successfully actuate
     
     line_str = readline(arduinoObj); % MATLAB returns readline as string
     line_chr = convertStringsToChars(line_str); % convert the string to char array
