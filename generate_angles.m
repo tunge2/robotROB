@@ -1,3 +1,4 @@
+% Generates angles in the safe zone for the dobot
 function angles = generate_angles()
 
     angles = zeros(3,1);
