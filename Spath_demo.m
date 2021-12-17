@@ -1,3 +1,5 @@
+%traces S-path in real life using Dobot
+
 clear all
 
 load S_path_irl.mat
@@ -21,9 +23,6 @@ for i=1:n
 %     end
     times(i,1) = DOdobot_line(position(:,i), arduinoObj);
     pause(1)
-    %READdobot(arduinoObj)
-    %robot.position
-    %robot.angles 
 end
 
 % %set to zero config
